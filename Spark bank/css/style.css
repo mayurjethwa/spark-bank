@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	background-color: #000;
+}
+body{
+	margin-bottom:50px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #40E5DA, #724DFA);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to top, #30aca4, #4b2fae); 
+}
+.container-1{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.navbar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.navbar h2{
+	font-variant: small-caps;
+	font-style: bold;
+	letter-spacing: 2px;
+	color: #ECFDFA;
+
+}
+.logo{
+	width: 50px;
+	cursor: pointer;
+	margin: 30px;
+}
+.menu-icon{
+	width: 25px;
+	cursor: pointer;
+	display:none;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #ECFDFA;
+	font-size: 14px;
+}
+nav ul li a:hover{
+	color: #40E5DA;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 100px 0;
+}
+.col-1{
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 50px;
+}
+.col-1 h2{
+	font-size: 54px;
+	color: #ECFDFA;
+}
+.col-1 h3{
+	font-size: 30px;
+	color: #EDE3F0;
+	font-weight: 100;
+	margin: 20px 0 10px;
+}
+.col-1 p{
+	font-size: 16px;
+	color: #b7b7b7;
+	font-weight: 100;
+}
+.col-1 p{
+	margin:30px 0;
+	font-size: 20px;
+}
+button{
+	width: 140px;
+	border:0;
+	padding: 12px 10px;
+	outline: none;
+	color: #fff;
+	background: linear-gradient(to right, #40E5DA, #724DFA);
+	border-radius: 15px;
+	cursor: pointer;
+	transition: width 0.5s;
+}
+button i{
+	width: 30px;
+	visibility: hidden;
+	background:transparent;
+	display: none;
+}
+button:hover i{
+	visibility: visible;
+	display: block;
+}
+button:hover{
+	width: 160px;
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.col-1::after{
+	content: '';
+	width: 10px;
+	height: 57%;
+	background: linear-gradient(#40E5DA, #724DFA);
+	position: absolute;
+	left: -40px;
+	top: 8px;
+}
+.col-2{
+	position: relative;
+	flex-basis: 60%;
+	display:flex;
+	align-items: center;
+}
+@keyframes bankanimate {
+	0%{
+		transform: translateY(-20px);
+	}
+	50%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(-20px);
+	}
+}
+.col-2 .bank{
+	width: 90%;
+	animation: bankanimate 5s infinite;
+}
+.color-box{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background:  linear-gradient(to left,#40E5DA, #724DFA);
+	border-radius: 20px 0 0 20px;
+	height: 100%;
+	width: 80%;
+	z-index: -1;
+	transform: translateX(150px);
+}
+.footer{
+	text-align: center;
+	flex-shrink: 0;
+	/* height: 50px; */
+    line-height: 50px;
+    text-align: center;
+    
+}
+.footer .footerLogo{
+	width:150px;
+}
+.footer .social-links img{
+	height: 30px;
+	margin: 20px;
+	cursor: pointer;
+}
+.footer .social-links{
+	
+	font-variant: small-caps;
+}
+.footer .social-links h2{
+	font-size:20px;
+	color:#ECFDFA;
+	word-spacing:10px;
+	letter-spacing:3px;	
+}
+.footer .social-links h3{
+	color:#ECFDFA;
+	word-spacing:10px;
+	letter-spacing:3px;
+}
+.footer .social-links i{
+	color:red;
+}
+@media only screen and (max-width:700px){
+	nav ul{
+		width:100%;
+		background-color: #000;
+		position:absolute;
+		top:75px;
+		right:0;
+		z-index:2;
+		text-align: center;
+	}
+	nav ul li{
+		display:block;
+		margin-top: 10px;
+		margin-top:10px;
+		margin-bottom:10px;
+		background:transparent;
+	}
+	nav ul li a{
+		color:#fff;
+		margin-top: 10px;
+		background:transparent;
+		text-decoration:none;
+	}
+	.menu-icon{
+		display:block;
+	}
+	#menuList{
+		overflow: hidden;
+		transition: .5s;
+	}
+	.row{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+	}
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+	.col-2 .bank{
+		width:77%;
+	}
+	.col-1{
+		flex-basis: 100%;
+	}
+	.col-1 h2{
+		font-size: 35px;
+	}
+	.col-1 h3{
+		font-size: 15px;
+	}
+}

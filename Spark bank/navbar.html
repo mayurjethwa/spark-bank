@@ -1,0 +1,24 @@
+<div class="navbar">
+  <a href="index.php"><img src="images/logo.png" class="logo" /></a>
+  <h2>Spark Bank</h2>
+  <nav>
+    <ul id="menuList">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="createUser.php">Create User</a></li>
+      <li><a href="transfer.php">Transfer</a></li>
+      <li><a href="transactionHistory.php">Transaction History</a></li>
+    </ul>
+  </nav>
+  <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" />
+</div>
+<script>
+  var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "230px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+</script>
