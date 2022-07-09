@@ -15,6 +15,9 @@ This is a Basic Banking System created as a part of task of my Internship in Gra
 * **PHP**
 * **MySQL**
 
+## Other:
+Logo and Images : Canva
+
 ## :clapper:Demo:
 https://youtu.be/9e6wZRO89Mc
 
