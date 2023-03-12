@@ -10,10 +10,10 @@ This is a Basic Banking System created as a part of task of my Internship in Gra
 ## :computer:Technology:
 * **HTML5**
 * **CSS3**
-* **JavaScript**
-* **FontAwesome (icons)**
 * **PHP**
 * **MySQL**
+* **FontAwesome (icons)**
+
 
 ## Other:
 Logo and Images : Canva
